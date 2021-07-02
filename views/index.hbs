@@ -56,76 +56,20 @@
     <section>
         <div class="container mt-5">
             <div class="row">
+               {{#each products}}
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top"
-                            src="https://imgr.search.brave.com/pgFFiluNlkyJjIvQ63bVP6GyWj8Bcah46zkDBXjF9jo/fit/1200/1200/no/1/aHR0cHM6Ly9hcHBs/ZXRvb2xib3guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAxL01hY0Jvb2st/QWlyLU0xLTIwMjAt/UmV2aWV3XzU3MDgt/OC5qcGc"
+                            src={{this.image}}
                             alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                            <h5 class="card-title">{{this.name}}</h5>
+                            <p class="card-text">{{this.description}}</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="https://imgr.search.brave.com/pgFFiluNlkyJjIvQ63bVP6GyWj8Bcah46zkDBXjF9jo/fit/1200/1200/no/1/aHR0cHM6Ly9hcHBs/ZXRvb2xib3guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAxL01hY0Jvb2st/QWlyLU0xLTIwMjAt/UmV2aWV3XzU3MDgt/OC5qcGc"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="https://imgr.search.brave.com/pgFFiluNlkyJjIvQ63bVP6GyWj8Bcah46zkDBXjF9jo/fit/1200/1200/no/1/aHR0cHM6Ly9hcHBs/ZXRvb2xib3guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAxL01hY0Jvb2st/QWlyLU0xLTIwMjAt/UmV2aWV3XzU3MDgt/OC5qcGc"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="https://imgr.search.brave.com/pgFFiluNlkyJjIvQ63bVP6GyWj8Bcah46zkDBXjF9jo/fit/1200/1200/no/1/aHR0cHM6Ly9hcHBs/ZXRvb2xib3guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAxL01hY0Jvb2st/QWlyLU0xLTIwMjAt/UmV2aWV3XzU3MDgt/OC5qcGc"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="https://imgr.search.brave.com/pgFFiluNlkyJjIvQ63bVP6GyWj8Bcah46zkDBXjF9jo/fit/1200/1200/no/1/aHR0cHM6Ly9hcHBs/ZXRvb2xib3guY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzAxL01hY0Jvb2st/QWlyLU0xLTIwMjAt/UmV2aWV3XzU3MDgt/OC5qcGc"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                {{/each}}
 
             </div>
         </div>
