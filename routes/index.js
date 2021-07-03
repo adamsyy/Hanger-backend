@@ -25,13 +25,13 @@ router.get('/', function(req, res, next) {
     {
       name:'Ifone',
       category:'mobile',
-      description:'poli sanm',
+      description:'badd',
       image:'https://imgr.search.brave.com/hq8Gj5li7n9K-EYzE3VcCDeme9YiHxOI6UThOkKggxo/fit/905/225/no/1/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5x/UktzWlVnZFRDSy1f/UkJUMjZqQ0Z3SGFE/NCZwaWQ9QXBp',
     },
 
    ]
 
-  res.render('index', {products});
+  res.render('index', {products,isadmin:true});
 });
 
 module.exports = router;
