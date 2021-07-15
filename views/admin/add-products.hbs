@@ -1,20 +1,20 @@
-<form enctype="multipart/form-data">
+
+
+<form action="/admin/add-products" method="POST">
   <div class="form-group">
-    <label for="exampleInputEmail1">Title</label>
-    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" name="em">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Category</label>
-    <input type="email" class="form-control" id="category1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Description</label>
-    <input type="email" class="form-control" id="desc1" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">upload image</label>
-    <input type="file" class="form-control-file" id="img1">
+    <label for="pwd">Password:</label>
+    <input type="text" class="form-control" id="pwd" name="pass">
   </div>
  
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="Image">
+  </div>
+
+
+  <button type="submit" class="btn btn-default">Submit</button>
 </form>

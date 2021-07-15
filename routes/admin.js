@@ -37,4 +37,10 @@ router.get('/add-products',function(req,res){
   res.render('admin/add-products');
 });
 
+router.post('/add-products',(req,res)=>{
+console.log(req.body);
+
+}
+);
+
 module.exports = router;
